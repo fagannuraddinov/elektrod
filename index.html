@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style/style.css" />
+    <link rel="stylesheet" href="./assets/style/general.css" />
+    <link rel="stylesheet" href="./assets/style/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Elektrod</title>
+  </head>
+<body>
+    <header class="header">
+        <div class="header__top--bcg">
+            <div class="header__top container">
+                <ul class="header__socials">
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                </ul>
+    
+                <div class="header__top--right">
+                    <form class="header__search">
+                        <div class="header__search--input">
+                            <input type="text" placeholder="Search product">
+                            <select name="searchSelect" id="headerSearchSelect">
+                                <option value="welding">Welding</option>
+                                <option value="valve">Valve</option>
+                            </select>
+                            <div class="header__search--groups">
+                                <span class="header__groups--active" id="headerSearchSelectedGroup">Welding</span>
+                                <i class="fa-solid fa-angle-down"></i>
+                                <ul class="header__groups--dropdown">
+                                    <li id="headerSearchWelding">Welding</li>
+                                    <li id="headerSearchValve">Valve</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                        <button class="header__search--btn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </form>
+                    <div class="header__lang">
+                        <span>EN</span>
+                        <i class="fa-solid fa-angle-down"></i>
+                        <ul class="header__lang--menu">
+                            <li>
+                                <a href="#">AZ</a>
+                            </li>
+                            <li>
+                                <a href="#">EN</a>
+                            </li>
+                            <li>
+                                <a href="#">RU</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header__bottom--bcg">
+            <div class="header__bottom container">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="./assets/images/logo/full logo light.png" alt="">
+                    </a>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li class="navbar__products">
+                            <a>Products <i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="navbar__products--list">
+                                <li>
+                                    <a href="#">Welding Group</a>
+                                </li>
+                                <li>
+                                    <a href="#">Valve Group</a>
+                                </li>
+                                <li>
+                                    <a href="#">Casting Group</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="icon-hamburger"></button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <div class="swiper bannerSwiper" id="homeBanner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://file.gedik.com.tr/web/slider/welding_2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://file.gedik.com.tr/web/slider/valve_2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://file.gedik.com.tr/web/slider/casting_2.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://file.gedik.com.tr/web/slider/gev_2.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <section class="navBox">
+            <ul>
+                <li class="navBox__card" style="background-image: url(https://gedik.com.tr/img/brands/kaynak.jpg);">
+                    <a href="#">
+                        Welding
+                    </a>
+                </li>
+                <li class="navBox__card" style="background-image: url(https://gedik.com.tr/img/brands/dokum.jpg);">
+                    <a href="#">
+                        Valve
+                    </a>
+                </li>
+                <li class="navBox__card" style="background-image: url(	https://gedik.com.tr/img/brands/gev.jpg);">
+                    <a href="#">
+                        Casting
+                    </a>
+                </li>
+            </ul>
+        </section>  
+
+        <section class="blogPost">
+            <div class="container">
+                <h3>Blog Posts</h3>
+                <div class="blogPost__list">
+
+                    <!-- 6 dene card -->
+
+                    <div class="blogCard">
+                        <a href="#">
+                            <div class="blogCard__img">
+                                <img src="https://file.gedik.com.tr/web/blog/what-is-a-fire-hydrant-how-does-it-work.png" alt="">
+                            </div>
+                            <h5>What Is a Fire Hydrant? How Does It Work?</h5>
+                            <div class="blogCard__time">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <time datetime="2023-11-09">09.11.2023</time>
+                            </div>
+                            <p>
+                                Fire hydrants are first response equipment to extinguish fires where they are used. This also facilitates the work of fire trucks that will come
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="blogCard">
+                        <a href="#">
+                            <div class="blogCard__img">
+                                <img src="https://file.gedik.com.tr/web/blog/what-is-a-fire-hydrant-how-does-it-work.png" alt="">
+                            </div>
+                            <h5>What Is a Fire Hydrant? How Does It Work?</h5>
+                            <div class="blogCard__time">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <time datetime="2023-11-09">09.11.2023</time>
+                            </div>
+                            <p>
+                                Fire hydrants are first response equipment to extinguish fires where they are used. This also facilitates the work of fire trucks that will come
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="blogCard">
+                        <a href="#">
+                            <div class="blogCard__img">
+                                <img src="https://file.gedik.com.tr/web/blog/what-is-a-fire-hydrant-how-does-it-work.png" alt="">
+                            </div>
+                            <h5>What Is a Fire Hydrant? How Does It Work?</h5>
+                            <div class="blogCard__time">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <time datetime="2023-11-09">09.11.2023</time>
+                            </div>
+                            <p>
+                                Fire hydrants are first response equipment to extinguish fires where they are used. This also facilitates the work of fire trucks that will come
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="blogCard">
+                        <a href="#">
+                            <div class="blogCard__img">
+                                <img src="https://file.gedik.com.tr/web/blog/what-is-a-fire-hydrant-how-does-it-work.png" alt="">
+                            </div>
+                            <h5>What Is a Fire Hydrant? How Does It Work?</h5>
+                            <div class="blogCard__time">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <time datetime="2023-11-09">09.11.2023</time>
+                            </div>
+                            <p>
+                                Fire hydrants are first response equipment to extinguish fires where they are used. This also facilitates the work of fire trucks that will come
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="blogCard">
+                        <a href="#">
+                            <div class="blogCard__img">
+                                <img src="https://file.gedik.com.tr/web/blog/what-is-a-fire-hydrant-how-does-it-work.png" alt="">
+                            </div>
+                            <h5>What Is a Fire Hydrant? How Does It Work?
+                            </h5>
+                            <div class="blogCard__time">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <time datetime="2023-11-09">09.11.2023</time>
+                            </div>
+                            <p>
+                                Fire hydrants are first response equipment to extinguish fires where they are used. This also facilitates the work of fire trucks that will come
+                            </p>
+                        </a>
+                    </div>
+
+                    <div class="blogCard">
+                        <a href="#">
+                            <div class="blogCard__img">
+                                <img src="https://file.gedik.com.tr/web/blog/what-is-a-fire-hydrant-how-does-it-work.png" alt="">
+                            </div>
+                            <h5>What Is a Fire Hydrant? How Does It Work?</h5>
+                            <div class="blogCard__time">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <time datetime="2023-11-09">09.11.2023</time>
+                            </div>
+                            <p>
+                                Fire hydrants are first response equipment to extinguish fires where they are used. This also facilitates the work of fire trucks that will come
+                            </p>
+                        </a>
+                    </div>
+
+                </div>
+
+                <a href="#" class="blogPost__loadMore">
+                    Load more
+                </a>
+
+            </div>
+        </section>
+
+
+
+         <!--                                         PRODUCTS                                 -->
+
+        <section class="products">
+            <div class="container">
+                <h3>Products</h3>
+                <div class="products__list">
+
+                    <!-- 10 dene product card -->
+
+                    <a href="#">
+                        <div class="product_detail_card">
+                          <div class="electrode_card_logo">
+                            <img
+                              src="https://gedik.com.tr/img/brands/geka.png"
+                              alt="electrode logo"
+                            />
+                          </div>
+                          <div class="electrode_card_img">
+                            <img
+                              src="https://file.gedik.com.tr/portal/approval_documents/GeKa-Elektrot-grey_60df03be2fd46.png"
+                              alt="elctrode"
+                            />
+                          </div>
+                          <div class="card_detail">
+                            <p>ELECTRODE-ELIT</p>
+                            <p>(E-6013)</p>
+                            <button>PRODUCT DETAIL</button>
+                          </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="product_detail_card">
+                          <div class="electrode_card_logo">
+                            <img
+                              src="https://gedik.com.tr/img/brands/geka.png"
+                              alt="electrode logo"
+                            />
+                          </div>
+                          <div class="electrode_card_img">
+                            <img
+                              src="https://file.gedik.com.tr/portal/approval_documents/GeKa-Elektrot-grey_60df03be2fd46.png"
+                              alt="elctrode"
+                            />
+                          </div>
+                          <div class="card_detail">
+                            <p>ELECTRODE-ELIT</p>
+                            <p>(E-6013)</p>
+                            <button>PRODUCT DETAIL</button>
+                          </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="product_detail_card">
+                          <div class="electrode_card_logo">
+                            <img
+                              src="https://gedik.com.tr/img/brands/geka.png"
+                              alt="electrode logo"
+                            />
+                          </div>
+                          <div class="electrode_card_img">
+                            <img
+                              src="https://file.gedik.com.tr/portal/approval_documents/GeKa-Elektrot-grey_60df03be2fd46.png"
+                              alt="elctrode"
+                            />
+                          </div>
+                          <div class="card_detail">
+                            <p>ELECTRODE-ELIT</p>
+                            <p>(E-6013)</p>
+                            <button>PRODUCT DETAIL</button>
+                          </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="product_detail_card">
+                          <div class="electrode_card_logo">
+                            <img
+                              src="https://gedik.com.tr/img/brands/geka.png"
+                              alt="electrode logo"
+                            />
+                          </div>
+                          <div class="electrode_card_img">
+                            <img
+                              src="https://file.gedik.com.tr/portal/approval_documents/GeKa-Elektrot-grey_60df03be2fd46.png"
+                              alt="elctrode"
+                            />
+                          </div>
+                          <div class="card_detail">
+                            <p>ELECTRODE-ELIT</p>
+                            <p>(E-6013)</p>
+                            <button>PRODUCT DETAIL</button>
+                          </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="product_detail_card">
+                          <div class="electrode_card_logo">
+                            <img
+                              src="https://gedik.com.tr/img/brands/geka.png"
+                              alt="electrode logo"
+                            />
+                          </div>
+                          <div class="electrode_card_img">
+                            <img
+                              src="https://file.gedik.com.tr/portal/approval_documents/GeKa-Elektrot-grey_60df03be2fd46.png"
+                              alt="elctrode"
+                            />
+                          </div>
+                          <div class="card_detail">
+                            <p>ELECTRODE-ELIT</p>
+                            <p>(E-6013)</p>
+                            <button>PRODUCT DETAIL</button>
+                          </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="product_detail_card">
+                          <div class="electrode_card_logo">
+                            <img
+                              src="https://gedik.com.tr/img/brands/geka.png"
+                              alt="electrode logo"
+                            />
+                          </div>
+                          <div class="electrode_card_img">
+                            <img
+                              src="https://file.gedik.com.tr/portal/approval_documents/GeKa-Elektrot-grey_60df03be2fd46.png"
+                              alt="elctrode"
+                            />
+                          </div>
+                          <div class="card_detail">
+                            <p>ELECTRODE-ELIT</p>
+                            <p>(E-6013)</p>
+                            <button>PRODUCT DETAIL</button>
+                          </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="product_detail_card">
+                          <div class="electrode_card_logo">
+                            <img
+                              src="https://gedik.com.tr/img/brands/geka.png"
+                              alt="electrode logo"
+                            />
+                          </div>
+                          <div class="electrode_card_img">
+                            <img
+                              src="https://file.gedik.com.tr/portal/approval_documents/GeKa-Elektrot-grey_60df03be2fd46.png"
+                              alt="elctrode"
+                            />
+                          </div>
+                          <div class="card_detail">
+                            <p>ELECTRODE-ELIT</p>
+                            <p>(E-6013)</p>
+                            <button>PRODUCT DETAIL</button>
+                          </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="product_detail_card">
+                          <div class="electrode_card_logo">
+                            <img
+                              src="https://gedik.com.tr/img/brands/geka.png"
+                              alt="electrode logo"
+                            />
+                          </div>
+                          <div class="electrode_card_img">
+                            <img
+                              src="https://file.gedik.com.tr/portal/approval_documents/GeKa-Elektrot-grey_60df03be2fd46.png"
+                              alt="elctrode"
+                            />
+                          </div>
+                          <div class="card_detail">
+                            <p>ELECTRODE-ELIT</p>
+                            <p>(E-6013)</p>
+                            <button>PRODUCT DETAIL</button>
+                          </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="product_detail_card">
+                          <div class="electrode_card_logo">
+                            <img
+                              src="https://gedik.com.tr/img/brands/geka.png"
+                              alt="electrode logo"
+                            />
+                          </div>
+                          <div class="electrode_card_img">
+                            <img
+                              src="https://file.gedik.com.tr/portal/approval_documents/GeKa-Elektrot-grey_60df03be2fd46.png"
+                              alt="elctrode"
+                            />
+                          </div>
+                          <div class="card_detail">
+                            <p>ELECTRODE-ELIT</p>
+                            <p>(E-6013)</p>
+                            <button>PRODUCT DETAIL</button>
+                          </div>
+                        </div>
+                    </a>
+
+                    <a href="#">
+                        <div class="product_detail_card">
+                          <div class="electrode_card_logo">
+                            <img
+                              src="https://gedik.com.tr/img/brands/geka.png"
+                              alt="electrode logo"
+                            />
+                          </div>
+                          <div class="electrode_card_img">
+                            <img
+                              src="https://file.gedik.com.tr/portal/approval_documents/GeKa-Elektrot-grey_60df03be2fd46.png"
+                              alt="elctrode"
+                            />
+                          </div>
+                          <div class="card_detail">
+                            <p>ELECTRODE-ELIT</p>
+                            <p>(E-6013)</p>
+                            <button>PRODUCT DETAIL</button>
+                          </div>
+                        </div>
+                    </a>
+
+                </div>
+
+                <a href="#" class="products__loadMore">
+                    Load more
+                </a>
+
+            </div>
+        </section>
+
+        <section class="about-contact container">
+            <section class="contact">
+                <h3>
+                    <i class="fa-solid fa-paper-plane"></i>
+                    CONTACT US
+                </h3>
+                <form class="contactForm">
+                    <label> 
+                        Name, Surname
+                        <input name="fullname" type="text">
+                    </label>
+
+                    <label>
+                        E-mail
+                        <input name="email" type="text">
+                    </label>
+
+                    <label>
+                        Phone Number
+                        <input name="phone" type="text">
+                    </label>
+
+                    <label>
+                        Your Message
+                        <div class="textarea">
+                            <textarea name="message"></textarea>
+                        </div>
+                    </label>
+                    <button>Send</button>
+                </form>
+            </section>
+
+            <section class="about">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos exercitationem non incidunt assumenda, veniam iure rem quisquam iste id quod aliquam consequuntur ipsam fugit ex sint explicabo dolorum repellendus suscipit.
+                    Ullam numquam velit minus accusamus veniam incidunt asperiores dolore ratione iusto magnam at ut voluptatem eos maiores, soluta unde, inventore deleniti? Voluptas aperiam, iure reprehenderit ullam provident perferendis voluptates consectetur!
+                    Magni eveniet saepe voluptatibus dolorem, maiores obcaecati sequi sit temporibus atque nobis mollitia. Voluptates, ipsam inventore! Ipsum incidunt, officiis quidem officia eius sint excepturi veritatis. Perspiciatis at corporis nisi voluptatem!
+                    Velit libero, nihil deserunt neque sint aliquid iste ipsam illum, rem totam dignissimos quod consequatur atque. Reprehenderit perferendis maiores saepe quaerat? Corporis earum omnis velit maxime voluptas veniam natus a.
+                    A quis, praesentium aliquid cum, eaque dicta ipsa ullam facilis reprehenderit error expedita veritatis fugit in, natus placeat eligendi nobis quas commodi exercitationem alias quibusdam vitae quo obcaecati. Error, quo!
+                    Obcaecati voluptate ducimus accusantium expedita, corporis dolore maxime molestiae ex nobis aliquid veniam quidem deserunt aliquam sit autem debitis eaque fugit tenetur rem excepturi in, placeat natus eius. Eligendi, unde.
+                    Maxime necessitatibus temporibus quos nostrum corporis quod architecto nisi natus iure repellat ea dolor cupiditate pariatur numquam, eaque, fugit minima optio blanditiis! Quasi nesciunt ea ipsum ipsa amet excepturi voluptate.
+                    Soluta amet porro iste maiores nam eos? Consequuntur obcaecati, voluptatum veniam neque harum iste praesentium voluptas! Quaerat, atque nostrum. Fugiat non temporibus quasi ullam corrupti incidunt natus a consequatur excepturi!
+                </p>
+                <a href="#" class="about__more">
+                    Continue Reading
+                </a>
+            </section>
+        </section>
+
+
+        <section class="timeLine">
+            <div class="timeLine__content container">
+                <h3 class="timeLine__heading">
+                    Time Line
+                </h3>
+
+                <div class="timeLine__slider">
+                    <div class="swiper" id="timeLine">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="timeLineBox">
+                                    <div class="timeLineBox__img">
+                                        <img src="https://gedik.com.tr/img/tarihce/healin-foods.jpg" alt="">
+                                    </div>
+                                    <div class="timeLineBox__line"></div>
+                                    <h5 class="timeLineBox_year"> 2012 </h5>
+                                    <p class="timeLineBox__title"> Healin Foods </p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="timeLineBox">
+                                    <div class="timeLineBox__img">
+                                        <img src="https://gedik.com.tr/img/tarihce/healin-foods.jpg" alt="">
+                                    </div>
+                                    <div class="timeLineBox__line"></div>
+                                    <h5 class="timeLineBox_year"> 2013 </h5>
+                                    <p class="timeLineBox__title"> Healin Foods </p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="timeLineBox">
+                                    <div class="timeLineBox__img">
+                                        <img src="https://gedik.com.tr/img/tarihce/healin-foods.jpg" alt="">
+                                    </div>
+                                    <div class="timeLineBox__line"></div>
+                                    <h5 class="timeLineBox_year"> 2014 </h5>
+                                    <p class="timeLineBox__title"> Healin Foods </p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="timeLineBox">
+                                    <div class="timeLineBox__img">
+                                        <img src="https://gedik.com.tr/img/tarihce/healin-foods.jpg" alt="">
+                                    </div>
+                                    <div class="timeLineBox__line"></div>
+                                    <h5 class="timeLineBox_year"> 2015 </h5>
+                                    <p class="timeLineBox__title"> Healin Foods </p>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="timeLineBox">
+                                    <div class="timeLineBox__img">
+                                        <img src="https://gedik.com.tr/img/tarihce/healin-foods.jpg" alt="">
+                                    </div>
+                                    <div class="timeLineBox__line"></div>
+                                    <h5 class="timeLineBox_year"> 2016 </h5>
+                                    <p class="timeLineBox__title"> Healin Foods </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeLine__slider--btn">
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </section>
+
+    </main>
+    
+    <footer class="footer">
+
+        <section class="footer__subs container">
+            <p class="footer__subs--header">Be aware of the innovations in Gedik World.</p>
+            <form class="footer__subs--form">
+                <select name="subscribeSelect" id="subscribeSelect">
+                    <option value="azerbaijan">Azerbaijan</option>
+                    <option value="turkey">Turkey</option>
+                </select>
+                <div class="footer__subs--country">
+                    <span class="footer__country--active" id="">Azerbaijan</span>
+                    <i class="fa-solid fa-angle-down"></i>
+                    <ul class="footer__subs--dropdown">
+                        <li>Azerbaijan</li>
+                        <li>Turkey</li>
+                        <li>Russian</li>
+                        <li>ABD</li>
+                        <li>Iran</li>
+                        <li>UK</li>
+                    </ul>
+                </div>
+                <input type="text" placeholder="Your E-mail Address">
+                <button class="footer__subs--btn">Send</button>
+            </form>
+        </section>
+
+        <div class="footer__main container">
+            <div>
+                <h5>Corporate</h5>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Our Code of Ethics</a>
+                        </li>
+                        <li>
+                            <a href="#">Quality Policy</a>
+                        </li>
+                        <li>
+                            <a href="#">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Social Responsibility</a>
+                        </li>
+                        <li>
+                            <a href="#">Career</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h5>Contact</h5>
+                <ul>
+                    <li>
+                        <span>Address :</span>
+                        <span> Ankara Caddesi No: 306 Seyhli</span>
+                    </li>
+                    <li>
+                        <p>Pendik 34906 İSTANBUL</p>
+                        
+                    </li>
+                    <li>
+                        <span>Tel :</span>
+                        <a href="tel:+902163785000"> +90 (216) 378 50 00</a>
+                    </li>
+                    <li>
+                        <span>Fax : </span>
+                        <a href="tel:+902163782044"> +90 (216) 378 20 44</a>
+                    </li>
+                    <li>
+                        <span>E-Mail : </span>
+                        <a href="mailto:gedik@gedik.com.tr"> gedik@gedik.com.tr</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Companies</h5>
+                <ul>
+                    <li>
+                        <a href="#">Gedik Welding</a>
+                    </li>
+                    <li>
+                        <a href="#">Gedik Advanced Casting Technologies</a>
+                    </li>
+                    <li>
+                        <a href="#">Istanbul Gedik University</a>
+                    </li>
+                    <li>
+                        <a href="#">Gedik Welding</a>
+                    </li>
+                    <li>
+                        <a href="#">Gedik Advanced Casting Technologies</a>
+                    </li>
+                    <li>
+                        <a href="#">Istanbul Gedik University</a>
+                    </li>
+                    <li>
+                        <a href="#">Gedik Welding</a>
+                    </li>
+                    <li>
+                        <a href="#">Gedik Advanced Casting Technologies</a>
+                    </li>
+                    <li>
+                        <a href="#">Istanbul Gedik University</a>
+                    </li>
+                    <li>
+                        <a href="#">Gedik Welding</a>
+                    </li>
+                    <li>
+                        <a href="#">Gedik Advanced Casting Technologies</a>
+                    </li>
+                    <li>
+                        <a href="#">Istanbul Gedik University</a>
+                    </li>
+                    <li>
+                        <a href="#">Gedik Welding</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h5>Social Media</h5>
+                <ul>
+                    <li>
+                        <a href="#">Facebook</a>
+                    </li>
+                    <li>
+                        <a href="#">Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#">Linkedin</a>
+                    </li>
+                    <li>
+                        <a href="#">Instagram</a>
+                    </li>
+                    <li>
+                        <a href="#">Youtube</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/script/general.js"></script>
+    <script src="./assets/script/slider.js" type="module"></script>
+    <script src="./assets/script/home.js"></script>
+  </body>
+</html>
